@@ -1,34 +1,63 @@
-# This is a basic workflow to help you get started with Actions
+# Follow Changes of Forked/Upstream Repository.
+#
+# This workflow rebase-marge changes from upstream's master to origin's master. 
+# - Ref:
+#   - https://stackoverflow.com/a/61574295/12102603 by N1ngu @ StackOverflow (EN)
+#   - https://qiita.com/KEINOS/items/3bcaa6cea853f6b63475 by KEINOS @ Qiita (JA)
 
-name: CI
+name: Merge upstream branches
 
-# Controls when the action will run. 
+# Triggers the action as scheduled
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  # Runs on 10 minutes past every hour
+  schedule:
+    # Ref: 
+    #   - https://help.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events-schedule
+    #   - https://crontab.guru/examples.html
+    # Cron format:
+    #         ┌───────────── minute (0 - 59)
+    #         │ ┌───────────── hour (0 - 23)
+    #         │ │ ┌───────────── day of the month (1 - 31)
+    #         │ │ │ ┌───────────── month (1 - 12 or JAN-DEC)
+    #         │ │ │ │ ┌───────────── day of the week (0 - 6 or SUN-SAT)
+    #         │ │ │ │ │                                   
+    #         │ │ │ │ │
+    #         │ │ │ │ │
+    #         * * * * *
+    - cron:  '10 */1 * * *'
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  merge:
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v2
-    - name: qmake
-      run: test -f xml-wget.sh && sh xml-wget.sh || echo "File doesn't exists"
+      - uses: actions/checkout@v2
+      - name: Merge upstream
+        run: |
+          git config --global user.name ${NAME}
+          git config --global user.email ${EMAIL}
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+          # Pass the --rebase-merges option to git rebase by default
+          git config --global pull.rebase merges
 
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+          # "git checkout master" is unnecessary, already here by default
+          git pull --unshallow  # this option is very important, you would get
+                                # complains about unrelated histories without it.
+                                # (but actions/checkout@v2 can also be instructed
+                                # to fetch all git depth right from the start)
+
+          # Add the repo which you forked to the remote and name it as "upstream"
+          git remote add upstream ${REPO_FORK}
+
+          # Fetch the upstream branches to local
+          git fetch upstream
+
+          # Merge changes
+          git checkout master
+          git merge --no-edit upstream/master
+          git push origin master
+        # Change the below to your settings
+        env:
+          NAME: KEINOS
+          EMAIL: CSReviser@gmail.com
+          REPO_FORK: https://github.com/nlogist/nhk-gogaku-xml.git
+
