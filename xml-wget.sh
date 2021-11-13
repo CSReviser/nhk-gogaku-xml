@@ -12,6 +12,7 @@ wget -x https://cgi2.nhk.or.jp/gogaku/st/xml/english/gendai/listdataflv.xml
 wget -x https://cgi2.nhk.or.jp/gogaku/st/xml/english/gakusyu/listdataflv.xml
 wget -x https://cgi2.nhk.or.jp/gogaku/st/xml/english/business1/listdataflv.xml
 wget -x https://cgi2.nhk.or.jp/gogaku/st/xml/english/business2/listdataflv.xml
+wget -x https://cgi2.nhk.or.jp/gogaku/st/xml/english/everybody/listdataflv.xml
 wget -x https://cgi2.nhk.or.jp/gogaku/st/xml/chinese/kouza/listdataflv.xml
 wget -x https://cgi2.nhk.or.jp/gogaku/st/xml/chinese/levelup/listdataflv.xml
 wget -x https://cgi2.nhk.or.jp/gogaku/st/xml/chinese/omotenashi/listdataflv.xml
