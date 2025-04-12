@@ -1,0 +1,43 @@
+# .github/workflows/auto-update.yml
+
+name: Weekly XML Git Update
+
+on:
+  schedule:
+    - cron: '30 1 * * 1' # JST 10:30 = UTC 1:30
+  workflow_dispatch: # 手動実行も可能にする
+
+jobs:
+  update-xml:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Run xml-wget.sh if it exists
+        run: |
+          if [ -f ./xml-wget.sh ]; then
+            sh ./xml-wget.sh
+          else
+            echo "xml-wget.sh does not exist"
+          fi
+
+      - name: Commit and push changes
+        run: |
+          git add -A
+
+          # Set commit date as this week's Monday (on Linux)
+          COMMIT_DATE=$(date -d 'last sunday + 1 day' +'%Y-%m-%d')
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "$COMMIT_DATE Updated files"
+            git push origin master
+          fi
