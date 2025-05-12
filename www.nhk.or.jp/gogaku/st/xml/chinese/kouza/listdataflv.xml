@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <musicdata>
-  <music title="まいにち中国語" hdate="4月28日放送分" kouza="まいにち中国語" code="4243904" file="25-chi-4243-904" dir="" nendo="2025" pgcode="H1"></music>
-  <music title="まいにち中国語" hdate="4月29日放送分" kouza="まいにち中国語" code="4243905" file="25-chi-4243-905-re01" dir="" nendo="2025" pgcode="H1"></music>
-  <music title="まいにち中国語" hdate="4月30日放送分" kouza="まいにち中国語" code="4243906" file="25-chi-4243-906" dir="" nendo="2025" pgcode="H1"></music>
-  <music title="まいにち中国語" hdate="5月1日放送分" kouza="まいにち中国語" code="4243907" file="25-chi-4243-907" dir="" nendo="2025" pgcode="H1"></music>
-  <music title="まいにち中国語" hdate="5月2日放送分" kouza="まいにち中国語" code="4243908" file="25-chi-4243-908" dir="" nendo="2025" pgcode="H1"></music>
+  <music title="まいにち中国語" hdate="5月5日放送分" kouza="まいにち中国語" code="4243013" file="25-chi-4243-013-re01" dir="" nendo="2025" pgcode="H1" />
+  <music title="まいにち中国語" hdate="5月6日放送分" kouza="まいにち中国語" code="4243014" file="25-chi-4243-014" dir="" nendo="2025" pgcode="H1" />
+  <music title="まいにち中国語" hdate="5月7日放送分" kouza="まいにち中国語" code="4243015" file="25-chi-4243-015" dir="" nendo="2025" pgcode="H1" />
+  <music title="まいにち中国語" hdate="5月8日放送分" kouza="まいにち中国語" code="4243016" file="25-chi-4243-016" dir="" nendo="2025" pgcode="H1" />
+  <music title="まいにち中国語" hdate="5月9日放送分" kouza="まいにち中国語" code="4243909" file="25-chi-4243-909" dir="" nendo="2025" pgcode="H1" />
 </musicdata>
