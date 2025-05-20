@@ -1,7 +1,7 @@
 # nhk-gogaku-xml
 NHK gogaku streaming xml files
 
-このリポジトリは、NHK語学講座のストリーミング配信の `listdataflv.xml` ファイルを管理するためのものです。  
+このリポジトリは、NHK語学講座のストリーミング配信の `listdataflv.xml` ファイル更新内容を記録するためのものです。  
 毎週自動的に更新を行い、過去に配信されたストリーミングのファイル名を記録しています。
 
 ## 自動更新について
