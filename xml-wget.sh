@@ -1,6 +1,7 @@
 #!/bin/sh
 
 wget -x https://www.nhk.or.jp/gogaku/st/xml/english/vr-radio/listdataflv.xml
+wget -x --header="User-Agent: Mozilla/5.0" https://www.nhk.or.jp/gogaku/st/xml/english/basic1/listdataflv.xml
 wget -x https://www.nhk.or.jp/gogaku/st/xml/english/basic0/listdataflv.xml
 wget -x https://www.nhk.or.jp/gogaku/st/xml/english/basic1/listdataflv.xml
 wget -x https://www.nhk.or.jp/gogaku/st/xml/english/basic2/listdataflv.xml
