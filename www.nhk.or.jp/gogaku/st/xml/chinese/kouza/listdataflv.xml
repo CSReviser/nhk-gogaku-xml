@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <musicdata>
-  <music title="まいにち中国語" hdate="3月23日放送分" kouza="まいにち中国語" code="4243616" file="25-chi-4243-616" dir="r" nendo="2025" pgcode="H2" />
-  <music title="まいにち中国語" hdate="3月24日放送分" kouza="まいにち中国語" code="4243617" file="25-chi-4243-617" dir="r" nendo="2025" pgcode="H2" />
-  <music title="まいにち中国語" hdate="3月25日放送分" kouza="まいにち中国語" code="4243618" file="25-chi-4243-618" dir="r" nendo="2025" pgcode="H2" />
-  <music title="まいにち中国語" hdate="3月26日放送分" kouza="まいにち中国語" code="4243619" file="25-chi-4243-619" dir="r" nendo="2025" pgcode="H2" />
-  <music title="まいにち中国語" hdate="3月27日放送分" kouza="まいにち中国語" code="4243620" file="25-chi-4243-620" dir="r" nendo="2025" pgcode="H2" />
+  <music title="まいにち中国語" hdate="3月30日放送分" kouza="まいにち中国語" code="4243101" file="26-chi-4243-101" dir="r" nendo="2026" pgcode="H1" />
+  <music title="まいにち中国語" hdate="3月31日放送分" kouza="まいにち中国語" code="4243102" file="26-chi-4243-102" dir="r" nendo="2026" pgcode="H1" />
+  <music title="まいにち中国語" hdate="4月1日放送分" kouza="まいにち中国語" code="4243103" file="26-chi-4243-103" dir="r" nendo="2026" pgcode="H1" />
+  <music title="まいにち中国語" hdate="4月2日放送分" kouza="まいにち中国語" code="4243104" file="26-chi-4243-104" dir="r" nendo="2026" pgcode="H1" />
+  <music title="まいにち中国語" hdate="4月3日放送分" kouza="まいにち中国語" code="4243105" file="26-chi-4243-105-re01" dir="r" nendo="2026" pgcode="H1" />
 </musicdata>
