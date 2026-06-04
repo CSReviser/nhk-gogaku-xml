@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <musicdata>
-  <music title="小学生の基礎英語" hdate="5月25日放送分" kouza="小学生の基礎英語" code="4251022" file="26-ek0-4251-022" dir="r" nendo="2026" pgcode="4251022" />
-  <music title="小学生の基礎英語" hdate="5月27日放送分" kouza="小学生の基礎英語" code="4251023" file="26-ek0-4251-023" dir="r" nendo="2026" pgcode="4251023" />
-  <music title="小学生の基礎英語" hdate="5月29日放送分" kouza="小学生の基礎英語" code="4251024" file="26-ek0-4251-024" dir="r" nendo="2026" pgcode="4251024" />
+  <music title="小学生の基礎英語" hdate="5月25日放送分" kouza="小学生の基礎英語" code="4251022" file="26-ek0-4251-022" dir="r" nendo="2026" pgcode="F0" />
+  <music title="小学生の基礎英語" hdate="5月27日放送分" kouza="小学生の基礎英語" code="4251023" file="26-ek0-4251-023" dir="r" nendo="2026" pgcode="F0" />
+  <music title="小学生の基礎英語" hdate="5月29日放送分" kouza="小学生の基礎英語" code="4251024" file="26-ek0-4251-024" dir="r" nendo="2026" pgcode="F0" />
 </musicdata>
